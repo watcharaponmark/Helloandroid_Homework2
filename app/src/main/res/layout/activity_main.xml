@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mark.helloandroid.MainActivity"
     android:gravity="center_vertical|center_horizontal"
-    android:background="@color/abc_search_url_text_normal">
+    android:background="#229a81">
 
     <TextView
         android:id="@+id/textView"
@@ -20,7 +20,8 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
         android:text="ป้อนรหัสผ่าน"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:textColor="#010101" />
 
     <TextView
         android:id="@+id/digit_text_view"
@@ -30,7 +31,7 @@
         android:layout_centerHorizontal="true"
         android:background="#8e0202"
         android:padding="10dp"
-        android:text="123456"
+        android:text="********"
         android:textColor="#ffff00"
         android:textSize="30dp"
         android:textStyle="bold"
