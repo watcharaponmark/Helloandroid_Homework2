@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast T1=Toast.makeText(this,"Hello",Toast.LENGTH_LONG);
-        T1.setGravity(0,0,-180);
-        T1.show();
+       // Toast T1=Toast.makeText(this,"Hello",Toast.LENGTH_LONG);
+       // T1.setGravity(0,0,-180);
+        // T1.show();
         Button bt1 = (Button) findViewById(R.id.button_1);
         bt1.setOnClickListener(this);
         Button bt2=(Button) findViewById(R.id.button_2);
@@ -43,63 +43,55 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         TextView tv1=(TextView)findViewById(R.id.digit_text_view);
-        Toast T=Toast.makeText(this,"ป้อนรหัสผ่าน 8 ตัวอักษร",Toast.LENGTH_SHORT);
-        T.setGravity(0,0,-180);
+        //Toast T=Toast.makeText(this,"ป้อนรหัสผ่าน 6 ตัวอักษร",Toast.LENGTH_SHORT);
+        //T.setGravity(0,0,-180);
         int id= view.getId();
-        if(this.str.length()!=8) {
+        if(this.str.length()!=6) {
             if (id == R.id.button_1) {
                 this.str += "1";
                 tv1.setText(this.str);
-                T.show();
+
             } else if (id == R.id.button_2) {
                 this.str += "2";
                 tv1.setText(this.str);
-                T.show();
+
             } else if (id == R.id.button_3) {
                 this.str += "3";
                 tv1.setText(this.str);
-                T.show();
+
             } else if (id == R.id.button_4) {
                 this.str += "4";
                 tv1.setText(this.str);
-                T.show();
+
             } else if (id == R.id.button_5) {
                 this.str += "5";
                 tv1.setText(this.str);
-                T.show();
+
             } else if (id == R.id.button_6) {
                 this.str += "6";
                 tv1.setText(this.str);
-                T.show();
+
             } else if (id == R.id.button_7) {
                 this.str += "7";
                 tv1.setText(this.str);
-                T.show();
+
             } else if (id == R.id.button_8) {
                 this.str += "8";
                 tv1.setText(this.str);
-                T.show();
+
             } else if (id == R.id.button_9) {
                 this.str += "9";
                 tv1.setText(this.str);
-                T.show();
+
             } else if (id == R.id.button_0) {
                 this.str += "0";
                 tv1.setText(this.str);
-                T.show();
+
             }
         }
              if (id == R.id.clear_button) {
-                 if( !str.equals("")){
-                     this.str = str.substring(0, str.length() - 1);
-                     tv1.setText(this.str);
-                     T.show();
-                 }
-                 else {
-                     tv1.setText("********");
-                     T.show();
-                 }
-
+                    this.str="";
+                 tv1.setText(this.str);
             }
 
 
